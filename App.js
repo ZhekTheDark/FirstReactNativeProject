@@ -16,8 +16,8 @@ function GreetingWithFlex(props) {
   </Text>;
 }
 
-// const HelloWorldApp = () => {
-const App = () => {
+const HelloWorldApp = () => {
+  // const App = () => {
   return (
     <View
       style={{

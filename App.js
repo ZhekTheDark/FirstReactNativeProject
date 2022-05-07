@@ -6,7 +6,6 @@ import {Image, ScrollView, Text, TextInput, View} from 'react-native';
 // }
 // const Greeting = () => <Text>Hello, world!</Text>;
 
-
 // function GreetingWithFlex(props) {
 //     return <Text style={{
 //         flex: parseInt(props.flex),
@@ -52,18 +51,22 @@ import {Image, ScrollView, Text, TextInput, View} from 'react-native';
 // }
 
 const HelloWorldApp = () => {
-    return (
-        <ScrollView>
-            <Text>Some Text</Text>
-            <View>
-                <Text>Some more Text</Text>
-                <Image source={{uri: 'https://reactnative.dev/docs/assets/p_cat2.png'}}
-                       style={{width: 200, height: 200}}/>
-            </View>
-            <TextInput style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-                       defaultValu="You can type in me"/>
-        </ScrollView>
-    );
-}
+  return (
+    <ScrollView>
+      <Text>Some Text</Text>
+      <View>
+        <Text>Some more Text</Text>
+        <Image
+          source={{uri: 'https://reactnative.dev/docs/assets/p_cat2.png'}}
+          style={{width: 200, height: 200}}
+        />
+      </View>
+      <TextInput
+        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+        defaultValu="You can type in me"
+      />
+    </ScrollView>
+  );
+};
 
 export default HelloWorldApp;

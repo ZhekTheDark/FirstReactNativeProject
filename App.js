@@ -63,7 +63,7 @@ const HelloWorldApp = () => {
       </View>
       <TextInput
         style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-        defaultValu="You can type in me"
+        defaultValue="You can type in me"
       />
     </ScrollView>
   );

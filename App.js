@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, ScrollView, Text, TextInput, View} from 'react-native';
+import {Text} from 'react-native';
 
 // function Greeting() {
 //   return <Text>Hello, world!</Text>;
@@ -50,23 +50,31 @@ import {Image, ScrollView, Text, TextInput, View} from 'react-native';
 //   )
 // }
 
-const HelloWorldApp = () => {
-  return (
-    <ScrollView>
-      <Text>Some Text</Text>
-      <View>
-        <Text>Some more Text</Text>
-        <Image
-          source={{uri: 'https://reactnative.dev/docs/assets/p_cat2.png'}}
-          style={{width: 200, height: 200}}
-        />
-      </View>
-      <TextInput
-        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-        defaultValue="You can type in me"
-      />
-    </ScrollView>
-  );
-};
+// const HelloWorldApp = () => {
+//   return (
+//     <ScrollView>
+//       <Text>Some Text</Text>
+//       <View>
+//         <Text>Some more Text</Text>
+//         <Image
+//           source={{uri: 'https://reactnative.dev/docs/assets/p_cat2.png'}}
+//           style={{width: 200, height: 200}}
+//         />
+//       </View>
+//       <TextInput
+//         style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+//         defaultValue="You can type in me"
+//       />
+//     </ScrollView>
+//   );
+// };
+//
+// export default HelloWorldApp;
 
-export default HelloWorldApp;
+const Cat = () => {
+  return (
+    <Text>Hello, I am your cat!</Text>
+  );
+}
+
+export default Cat;

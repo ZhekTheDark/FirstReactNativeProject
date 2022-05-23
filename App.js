@@ -71,9 +71,12 @@ import {Text} from 'react-native';
 //
 // export default HelloWorldApp;
 
+const getFullName = (firstName, secondName, thirdName) => {
+  return firstName + ' ' + secondName + ' ' + thirdName;
+};
+
 const Cat = () => {
-  const name = 'Maru';
-  return <Text>Hello, I am {name}!</Text>;
+  return <Text>Hello, I am {getFullName('Rum', 'Tum', 'Tugger')}!</Text>;
 };
 
 export default Cat;

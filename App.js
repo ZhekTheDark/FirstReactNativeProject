@@ -72,7 +72,7 @@ import {Text} from 'react-native';
 // export default HelloWorldApp;
 
 const getFullName = (firstName, secondName, thirdName) => {
-  return firstName + ' ' + secondName + ' ' + thirdName;
+  return `${firstName} ${secondName} ${thirdName}`;
 };
 
 const Cat = () => {

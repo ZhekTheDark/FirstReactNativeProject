@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, TextInput, View} from 'react-native';
 
 // function Greeting() {
 //   return <Text>Hello, world!</Text>;
@@ -71,12 +71,29 @@ import {Text} from 'react-native';
 //
 // export default HelloWorldApp;
 
-const getFullName = (firstName, secondName, thirdName) => {
-  return `${firstName} ${secondName} ${thirdName}`;
-};
+// const getFullName = (firstName, secondName, thirdName) => {
+//   return `${firstName} ${secondName} ${thirdName}`;
+// };
+//
+// const Cat = () => {
+//   return <Text>Hello, I am {getFullName('Rum', 'Tum', 'Tugger')}!</Text>;
+// };
 
 const Cat = () => {
-  return <Text>Hello, I am {getFullName('Rum', 'Tum', 'Tugger')}!</Text>;
+  return (
+    <View>
+      <Text>Hello, I am...</Text>
+      <TextInput
+        style={{
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 1
+        }}
+        defaultValue="Name me!"
+      />
+    </View>
+  );
 };
+
 
 export default Cat;

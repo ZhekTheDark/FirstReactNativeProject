@@ -87,13 +87,12 @@ const Cat = () => {
         style={{
           height: 40,
           borderColor: 'gray',
-          borderWidth: 1
+          borderWidth: 1,
         }}
         defaultValue="Name me!"
       />
     </View>
   );
 };
-
 
 export default Cat;

@@ -79,20 +79,39 @@ import {Text, TextInput, View} from 'react-native';
 //   return <Text>Hello, I am {getFullName('Rum', 'Tum', 'Tugger')}!</Text>;
 // };
 
+//const Cat = () => {
+//  return (
+//    <View>
+//      <Text>Hello, I am...</Text>
+//      <TextInput
+//        style={{
+//          height: 40,
+//          borderColor: 'gray',
+//          borderWidth: 1,
+//        }}
+//        defaultValue="Name me!"
+//      />
+//    </View>
+//  );
+//};
+
 const Cat = () => {
   return (
     <View>
-      <Text>Hello, I am...</Text>
-      <TextInput
-        style={{
-          height: 40,
-          borderColor: 'gray',
-          borderWidth: 1,
-        }}
-        defaultValue="Name me!"
-      />
+      <Text>I am also a cat!</Text>
     </View>
   );
-};
+}
+
+const Cafe = () => {
+  return (
+    <View>
+      <Text>Welcome!</Text>
+      <Cat />
+      <Cat />
+      <Cat />
+    </View>
+  );
+}
 
 export default Cat;

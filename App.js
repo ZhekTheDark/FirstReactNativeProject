@@ -114,22 +114,22 @@ import {Text, TextInput, View} from 'react-native';
 //    );
 //};
 
-const Cat = (props) => {
-    return (
-        <View>
-            <Text>Hello, I am {props.name}!</Text>
-        </View>
-    );
-}
+const Cat = props => {
+  return (
+    <View>
+      <Text>Hello, I am {props.name}!</Text>
+    </View>
+  );
+};
 
 const Cafe = () => {
-    return (
-        <View>
-            <Cat name="Maru"/>
-            <Cat name="Jellylorum"/>
-            <Cat name="Spot"/>
-        </View>
-    );
-}
+  return (
+    <View>
+      <Cat name="Maru" />
+      <Cat name="Jellylorum" />
+      <Cat name="Spot" />
+    </View>
+  );
+};
 
 export default Cat;

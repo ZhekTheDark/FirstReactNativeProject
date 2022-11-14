@@ -12,7 +12,6 @@ const Cat = props => {
 const Cafe = () => {
     return (
         <View style={styles.containerMain}>
-            {/*<View>*/}
             <Cat name="Maru"/>
             <Cat name="Jellylorum"/>
             <Cat name="Spot"/>

@@ -1,23 +1,19 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Image} from 'react-native';
 
-const Cat = props => {
+const CatApp = () => {
     return (
         <View>
-            <Text>Hello, I am {props.name}!</Text>
+            <Image
+                source={{uri: "https://reactnative.dev/docs/assets/p_cat1.png"}}
+                style={{width: 200, height: 200}}
+            />
+            <Text>Hello, I am your cat!</Text>
         </View>
     );
-};
+}
 
-const Cafe = () => {
-    return (
-        <View style={styles.containerMain}>
-            <Cat name="Maru"/>
-            <Cat name="Jellylorum"/>
-            <Cat name="Spot"/>
-        </View>
-    );
-};
+export default CatApp;
 
 const styles = StyleSheet.create({
     containerMain: {
@@ -28,5 +24,3 @@ const styles = StyleSheet.create({
         height: null,
     },
 });
-
-export default Cafe;

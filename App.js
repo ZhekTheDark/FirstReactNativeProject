@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Button, Text, View, Image} from 'react-native';
+import {StyleSheet, Button, Text, View} from 'react-native';
 
 const Cat = (props) => {
     const [isHungry, setIsHungry] = useState(true);
